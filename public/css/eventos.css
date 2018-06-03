@@ -1,0 +1,204 @@
+div.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 80px;
+    grid-column-gap: 10px;
+    grid-row-gap: 12px;
+    grid-auto-flow: row;
+}
+
+/* card size */
+
+.size-0 {
+    grid-row-end: span 2;
+}
+
+.size-1 {
+    grid-row-end: span 4;
+    grid-column-end: span 2;
+}
+
+.size-2 {
+    grid-row-end: span 2;
+    grid-column-end: span 4;
+}
+
+.size-3 {
+    grid-row-end: span 6;
+    grid-column-end: span 2;
+}
+
+.size-4 {
+    grid-row-end: span 4;
+    grid-column-end: span 4;
+}
+
+/* end card size */
+
+/* card styles */
+
+.card a {
+    text-decoration: none;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    cursor: pointer;
+    background-color: white;
+}
+
+.card-1 {
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+}
+
+.card-1>a>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card-1>a>div>div:first-child {
+    position: absolute;
+    background-color: var(--secondary-color);
+    padding: 2px 10px;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    top: 15px;
+    left: 15px;
+}
+
+.card>a>div>div:last-child {
+    padding: var(--padding);
+}
+
+.card-1>a>div>div:last-child h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-1>a>div>div:last-child p {
+    color: white;
+    font-size: .8rem;
+    line-height: 1.3rem;
+    font-weight: lighter;
+}
+
+.card-2>div:first-child {
+    width: 100%;
+    height: 45%;
+    background-color: black;
+    background-size: cover;
+}
+
+.card-2>div:last-child {
+    width: 100%;
+    height: 55%;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h4 {
+    color: var(--text-color-primary);
+    margin: 10px 0;
+    line-height: 1rem;
+}
+
+.card-info h5 {
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.card-info p {
+    color: var(--text-color-secondary);
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+.card-3 {
+    display: inline-flex;
+}
+
+.card-3>div:first-child {
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+}
+
+.card-3>div:last-child {
+    width: 60%;
+    height: 100%;
+}
+
+.card-4 {
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.card-4>div {
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+.card-4>p {
+    color: var(--text-color-secondary);
+    margin: 5px 0;
+}
+
+.card-5 {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-5>p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.card-6 {
+    padding: 10px;
+}
+
+.card-6 li {
+    margin-top: 30px;
+}
+
+.card-6>h3 {
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+}
+
+.card-6 h4 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.card-6 p {
+    color: var(--text-color-secondary);
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+/* end card styles */
